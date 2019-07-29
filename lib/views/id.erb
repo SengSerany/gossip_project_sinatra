@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Gossip n°<%= nb_id %></title>
+  </head>
+  <body>
+    <h1> Voici la page du potin n°<%=params[:id]%> </h1>
+        <p>
+          Son auteur : <%= nb_id.author %><br/>
+          Le contenu du potin : <%= nb_id.content %>
+        </p><br />
+        <br />
+         <p>Le gossip est incorrecte?
+          <a href="/gossips/<%=params[:id]%>/edit/">Modifier le gossip</a></p>
+  </body>
+</html>
